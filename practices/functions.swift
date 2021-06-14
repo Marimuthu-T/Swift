@@ -74,6 +74,25 @@ let functioninariable=NameSeparator
 print(functioninariable("scch hbcwe").FirstName)
 
 
+class Counter {
+    var count = 0
+    func increment() {
+        count += 1
+    }
+    func increment(by amount: Int) {
+        increment()  // self.increment()
+        count += amount
+    }
+    func reset() {
+        count = 0
+    }
+}
+
+
+var counter = Counter()
+counter.increment(by: 3)
+
+print(counter.count)
 
 
 
