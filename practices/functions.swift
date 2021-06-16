@@ -1,6 +1,14 @@
 import Foundation
 
 
+func  manysameargumentswithsamename(a p1: Int = 23, a p2: Int = 34)
+
+{
+    print("Possible\(p1 + p2)")
+}
+
+manysameargumentswithsamename(a: 4)
+
 func welcome()
 {
     print("Welcome you all")
