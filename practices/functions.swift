@@ -94,5 +94,28 @@ counter.increment(by: 3)
 
 print(counter.count)
 
+var a = 89
+var b = 87
+
+func add(arg1 para1: Int , arg2 para2: Int) -> Int
+{
+    return para1 + para2
+}
+
+
+
+
+func Executewithclosure( ExpresionExecuter: (Int , Int) -> Int , a: Int,b: Int) 
+{
+    let result=ExpresionExecuter(a , b)
+    print(result)
+}
+
+Executewithclosure(ExpresionExecuter: { (a: Int , b: Int) -> Int in return a + b} , a: 234 , b: 209)
+
+Executewithclosure(ExpresionExecuter: add , a: 234 , b: 209)
+
+
+
 
 
