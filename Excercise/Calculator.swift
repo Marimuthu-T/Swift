@@ -21,7 +21,7 @@ var input = 3
 switch(input)
 {
     case 1:
-       MathExecuter(equation: { $0 + $1 },a: variable1,b: variable2)
+       MathExecuter(equation: { $0 + $1 },a: variable1,b: variable2) //Expression Clouser // shortand
     case 2:
        MathExecuter(equation: { $0 - $1 },a: variable1,b: variable2)
     case 3:
